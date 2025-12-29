@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h1>About Page</h1>
+    <div class="flex-box">
+        <a class="button" href="index.html">Index Page</a>
+        <a class="button" href="index.html">Home Page</a>
+        <a class="button" href="index.html">Contact Page</a>
+        <a class="button" href="index.html">Detail Page</a>
+    </div>
+    <p style="color: aqua; background-color: tomato; margin-bottom: 80px;" >This tag is using inline css</p>
+
+    <p class="pTagWithClass">Hello from p tag using internal css and cl ss.</p>
+    <p class="pTagWithClass">Hello from p tag using same class.</p>
+
+    <p id="pTagWithId">Hello using id</p>
+    <div class="withBackgroundImage">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit veniam non perspiciatis distinctio accusantium maxime ex? Iste ab fugiat, quae perferendis cum aperiam quas similique excepturi, qui vero saepe.
+    </div>
+    <br><br><br><br>
+    <div class="button tranlateX">Click me</div>
+    <!-- 
+    display: it controls how an element is rendered on the page
+        does it take full width? does it go to next line? 
+        can it have width/height? does it affect layout or disappear?
+        display  block | inline | inline-block | none | flex | grid
+        display:block -> used in div,p, h1-h6, header,footer,ul,li
+            - starts on a new line
+            - Takes 100% width by default
+            - You can set width and height
+            - Can apply margins and padding 
+
+    display: inline -> eg, span, a, string, em
+        - Does not start a new line
+        - Takes only content width
+        - Cannot set width and height
+        - Top and bottom margin are ignored
+        - Padding works, 
+    
+    display: inline:block combination of inline and block
+     - stays inline
+        - Does not start a new line
+        - Takes only content width
+    can set width height margin padding
+
+    display: none -> kei pani dekhaudaina
+
+    display:flex -> it gives us flexibility/ flexible box layout
+        - Turns an element into a flex container.
+        - Childrens become flex items.
+        default behaviour: 
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            Output: | item | item | item |
+
+        flex-direction: row | coulumn;
+        justify-content: flex-start | center | space-between | space-around;
+        align-items: stretch | center | flex-start | flex-end;
+
+        flex-wrap -> creating responsive layout, telling a flex container whether items should stay on 
+        one line(nowrap, the default) or flow onto multiple lines (wrap) when they run out of space.
+        
+        Note: FLex is used for 1D design.
+
+    display: grid -> it creates 2D layout system
+        grid-tempalte-columns: 1fr 200px 2fr;
+
+    -->
+
+
+</body>
+</html>
