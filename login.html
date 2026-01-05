@@ -3,47 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
+
     <style>
-        .login-container{
+        .login-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
-            flex-direction: column;
-
-        }
-        .login-card{
-            background-color: rgb(117, 255, 255);
-            width: 340px;
-            padding: 24px;
-            border-radius: 30px;
+            min-height: 100vh;  
+            background-color: #f2f2f2;
         }
 
-        
+        .login-card {
+            width: 300px;
+            background-color: rgb(169, 33, 196);
+            padding: 30px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .login-card h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-card div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: rgb(169, 33, 196);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #eee;
+        }
     </style>
-    
 </head>
+
 <body>
     <div class="login-container">
-        <div class=""login-card>
+        <div class="login-card"> 
+            <h1>Login Page</h1>     
 
-            <h1>
-                Login page
-            </h1>
             <form action="#">
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username">
-                <br>
-                 <label for="password">Passowrd:</label>
-                <input type="text" name="username" id="username">
-                <br>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"> 
+                </div>
+
                 <button type="submit">Login</button>
-
-
-            </form>
-        </div>
+            </form>      
+        </div>   
     </div>
-    
 </body>
 </html>
